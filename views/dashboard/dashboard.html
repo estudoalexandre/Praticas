@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container col-12">
-        <nav class="col-12">
-            <ul class="nav nav-pills col-2 float-end">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Ativo</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Ação</a>
-                        <a class="dropdown-item" href="#">Outra ação</a>
-                        <a class="dropdown-item" href="#">Algo mais aqui</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Link isolado</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Desativado</a>
-                </li> -->
-            </ul>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Ativo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Desativado</a>
-                </li>
-              </ul>
-        </nav>
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Ativo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desativado</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- Conteúdo no Meio -->
+            <div class="col-6">
+                <p>ASDASDASDASDASDASDASD</p>
+            </div>
+
+            <!-- Menu de Navegação à Direita -->
+            <nav class="col-3">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Ativo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Ação</a>
+                            <a class="dropdown-item" href="#">Outra ação</a>
+                            <a class="dropdown-item" href="#">Algo mais aqui</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Link isolado</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
     </div>
-    
-    
-
-
 </body>
+
 </html>
