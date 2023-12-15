@@ -1,3 +1,4 @@
 #Ignorar diretorio
 routes/
 conexaosql/
+node_modules/
