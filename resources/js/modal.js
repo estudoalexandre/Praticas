@@ -1,16 +1,24 @@
-const deleteUserController = require("../../controllers/deleteUserController");
-
-// Dentro do seu script cliente (modal.js ou outro arquivo)
 $(document).ready(function () {
     // Manipulador de eventos para o botão "Confirmar Exclusão" dentro do modal
     $('#confirmDeleteButton').on('click', function () {
-        // Execute a lógica de exclusão do usuário
+        // Lógica para obter o ID do usuário
         const userIdToDelete = $('#userId').val();
-        deleteUserController(userIdToDelete);
-    });
 
-    // Adicione um manipulador de eventos para o botão "Apagar minha CONTA"
-    $('#confirmDeleteModalButton').on('click', function () {
-        // Lógica adicional, se necessário, quando o botão "Apagar minha CONTA" for clicado
+        // Lógica para enviar uma solicitação DELETE para o servidor
+        $.ajax({
+            url: `/delete_user/${userIdToDelete}`,
+            type: 'DELETE',
+            success: function (result) {
+                // Aqui você pode lidar com a resposta do servidor, se necessário
+                console.log(result);
+            },
+            error: function (error) {
+                console.error('Erro ao excluir o usuário', error);
+                // Aqui você pode lidar com o erro, se necessário
+            }
+        });
+
+        // Fechar o modal após a confirmação
+        $('#confirmDeleteModal').modal('hide');
     });
 });
