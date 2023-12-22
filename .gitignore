@@ -4,3 +4,5 @@ conexaosql/
 node_modules/
 checagem/
 update/
+controllers/
+middleware/
